@@ -9,7 +9,7 @@ class Counter {
   }
 
   decrement () {
-    this.value++
+    this.value--
   }
 }
 
