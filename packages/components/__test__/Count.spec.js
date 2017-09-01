@@ -1,12 +1,12 @@
 import React from 'react'
 import Count from '../src/Count'
-import renderer from 'react-test-renderer'
+import { render } from 'enzyme'
 
 describe('Count', () => {
   it('should render a value', () => {
-    let tree = renderer.create(
+    let wrapper = render(
       <Count value={9} />
     )
-    expect(tree.toJSON()).toMatchSnapshot()
+    expect(wrapper.toString()).toMatchSnapshot()
   })
 })
