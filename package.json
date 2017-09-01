@@ -1,4 +1,5 @@
 {
+  "name": "lerna-counter",
   "scripts": {
     "start": "cd ./packages/counter-frontend && npm start",
     "test": "jest",
