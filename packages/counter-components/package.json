@@ -1,0 +1,15 @@
+{
+  "name": "counter-components",
+  "version": "1.0.0",
+  "main": "index.js",
+  "standard": {
+    "global": [
+      "describe",
+      "it",
+      "expect"
+    ]
+  },
+  "devDependencies": {
+    "standard": "^10.0.3"
+  }
+}

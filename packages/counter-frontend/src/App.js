@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Counter from 'counter'
-import { Count, IncButton, DecButton } from 'components'
+import Counter from 'counter-core'
+import { Count, IncButton, DecButton } from 'counter-components'
 
 class App extends Component {
   constructor (props) {

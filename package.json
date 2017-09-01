@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "cd ./packages/counter-fe && npm start",
+    "start": "cd ./packages/counter-frontend && npm start",
     "test": "jest",
     "test:watch": "jest --watch"
   },
