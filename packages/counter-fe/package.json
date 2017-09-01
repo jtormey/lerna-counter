@@ -20,6 +20,7 @@
     "webpack-dev-server": "^2.7.1"
   },
   "dependencies": {
+    "components": "^1.0.0",
     "counter": "^1.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"

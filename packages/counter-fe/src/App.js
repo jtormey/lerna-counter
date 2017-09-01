@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Counter from 'counter'
-import Count from './Count'
+import { Count } from 'components'
 
 let init = 0
 let counter = new Counter(init)
