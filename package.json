@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "start": "cd ./packages/counter-fe && npm start",
     "test": "jest",
     "test:watch": "jest --watch"
   },

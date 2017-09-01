@@ -2,30 +2,27 @@ import React, { Component } from 'react'
 import Counter from 'counter'
 import { Count, IncButton, DecButton } from 'components'
 
-let init = 0
-let counter = new Counter(init)
-
 class App extends Component {
   constructor (props) {
     super(props)
-    this.state = { value: init }
+    this.state = { counter: Counter.of(0) }
   }
 
   inc () {
-    counter.increment()
-    this.setState({ value: counter.value })
+    let { counter } = this.state
+    this.setState({ counter: Counter.increment(counter) })
   }
 
   dec () {
-    counter.decrement()
-    this.setState({ value: counter.value })
+    let { counter } = this.state
+    this.setState({ counter: Counter.decrement(counter) })
   }
 
   render () {
-    let { value } = this.state
+    let { counter } = this.state
     return (
       <div>
-        <Count value={value} />
+        <Count value={counter.value} />
         <IncButton onInc={() => this.inc()} />
         <DecButton onDec={() => this.dec()} />
       </div>
