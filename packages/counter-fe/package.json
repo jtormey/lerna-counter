@@ -7,6 +7,13 @@
     "start": "webpack-dev-server",
     "build": "webpack webpack.config.js"
   },
+  "standard": {
+    "global": [
+      "describe",
+      "it",
+      "expect"
+    ]
+  },
   "devDependencies": {
     "standard": "^10.0.3",
     "webpack": "^3.5.5",

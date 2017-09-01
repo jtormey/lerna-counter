@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Counter from 'counter'
+import Count from './Count'
 
 let init = 0
 let counter = new Counter(init)
@@ -24,7 +25,7 @@ class App extends Component {
     let { value } = this.state
     return (
       <div>
-        <h1>Counter: {value}</h1>
+        <Count value={value} />
         <button onClick={() => this.inc()}>inc</button>
         <button onClick={() => this.dec()}>dec</button>
       </div>
