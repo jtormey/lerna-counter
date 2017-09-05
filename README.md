@@ -1,15 +1,19 @@
-# Counter - Lerna Repo
+# Counter - Monorepo
 
-A minimal example of a lerna repo, implementing a simple counter app.
+A minimal example of a yarn workspaces monorepo, implementing a simple counter app.
 
-## Usage
+## Setup
 
-Install root dependencies: `npm i`
+Install `yarn@0.28` and enable workspaces functionality
 
-Bootstrap packages: `lerna bootstrap`
+```
+yarn config set workspaces-experimental true
+```
 
-Start application: `npm start`
+Install dependencies: `yarn`
 
-Test: `npm test`
+Start application: `yarn start`
 
-Test in watch mode: `npm run test:watch`
+Test: `yarn test`
+
+Test in watch mode: `yarn test:watch`
